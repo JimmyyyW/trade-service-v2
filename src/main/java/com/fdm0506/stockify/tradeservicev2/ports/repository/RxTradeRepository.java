@@ -7,5 +7,5 @@ import reactor.core.publisher.Flux;
 
 @Repository
 public interface RxTradeRepository extends ReactiveMongoRepository<Trade, String> {
-    public Flux<Trade> findAllByUsername(String username);
+    Flux<Trade> findAllByUsername(String username);
 }

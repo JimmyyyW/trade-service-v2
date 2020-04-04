@@ -35,7 +35,7 @@ class TradeControllerTest {
     private TradeService service;
 
     @Test
-    void createNewTrade() {
+    public void createNewTrade() {
         var value = Decimal128.parse("123");
         PostTradeRequest postTradeRequest = new PostTradeRequest(
                 "JimmyyW",
@@ -62,7 +62,7 @@ class TradeControllerTest {
     }
 
     @Test
-    void getUsersTrades() {
+    public void getUsersTrades() {
         var trade1 = new Trade(
                 LocalDateTime.of(2020, 4, 1, 17, 22, 10),
                 "JimmyyW",
